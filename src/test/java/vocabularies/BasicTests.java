@@ -1,10 +1,18 @@
-# Vocabularies
+package vocabularies;
 
-Simple Java library for reading Antonio RAML Vocabularies. 
+import java.io.IOException;
+import java.net.URL;
+import java.util.Collection;
 
-Usage: `new Vocabulary(url)`
+import org.raml.vocabularies.ClassTerm;
+import org.raml.vocabularies.DataType;
+import org.raml.vocabularies.Vocabulary;
 
-```java
+import junit.framework.TestCase;
+
+public class BasicTests extends TestCase {
+
+	public void test0() {
 		try {
 			URL in = BasicTests.class.getResource("/raml-http.raml");
 			Vocabulary vocabulary = new Vocabulary(in);
@@ -21,4 +29,5 @@ Usage: `new Vocabulary(url)`
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-```		
+	}
+}
