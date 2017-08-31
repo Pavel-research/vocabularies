@@ -10,11 +10,11 @@ import org.raml.vocabularies.Vocabulary;
 
 import junit.framework.TestCase;
 
-public class BasicTests extends TestCase {
+public class BasicTest extends TestCase {
 
 	public void test0() {
 		try {
-			URL in = BasicTests.class.getResource("/raml-http.raml");
+			URL in = BasicTest.class.getResource("/raml-http.raml");
 			Vocabulary vocabulary = new Vocabulary(in);
 			TestCase.assertEquals(vocabulary.getClassTerms().size(), 11);
 			ClassTerm classTerm = vocabulary.getClassTerms().get("EndPoint");
