@@ -22,3 +22,5 @@ Usage: `new Vocabulary(url)`
 			e.printStackTrace();
 		}
 ```		
+
+Known limitations: Cyclic vocabulary dependencies are not supported.
